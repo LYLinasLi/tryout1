@@ -1,0 +1,3 @@
+python train.py --workers 8 --device 0 --batch-size 32 --data E:/gru_kalman/yolov5/data/svhn.yaml --img 640 640 --cfg cfg/training/yolov7-tiny.yaml --weights 'E:/gru_kalman/yolov7/weights/yolov7-tiny.pt' --name yolov7-svhn --hyp data/hyp.scratch.custom.yaml --adam
+
+python test.py --data E:/gru_kalman/yolov5/data/svhn.yaml --img 640 --batch 32 --conf 0.001 --iou 0.65 --device 0 --weights E:\gru_kalman\yolov7\runs\train\yolov7-svhn\weights\best.pt --name yolov7_640_val_digits
